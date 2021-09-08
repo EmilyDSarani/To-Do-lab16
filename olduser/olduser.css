@@ -10,7 +10,7 @@ html {
   
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(187, 1, 78) 50%, rgb(62, 137, 235) 50%);
+    background-image: linear-gradient(-60deg, rgb(5, 68, 10) 50%, rgb(214, 226, 185) 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -22,11 +22,11 @@ html {
   
   .bg2 {
     animation-direction:alternate-reverse;
-    animation-duration:4s;
+    animation-duration:7s;
   }
   
   .bg3 {
-    animation-duration:5s;
+    animation-duration:7s;
   }
   
   .content {
@@ -57,8 +57,8 @@ html {
 
   button{
       margin: 20px;
-      border: rgb(187, 1, 78) solid 3px;
-      background-color: rgb(62, 137, 235);
+      border:  rgb(214, 226, 185) solid 3px;
+      background-color: rgb(5, 68, 10);
       color: white;
       padding: 10px;
       border-radius: 30%;
@@ -67,8 +67,9 @@ html {
   }
 
   button:hover{
-      background-color: rgb(187, 1, 78);
-      border:rgb(62, 137, 235) solid 3px;
+      background-color: rgb(214, 226, 185);
+      border: rgb(5, 68, 10) solid 3px;
+      color:darkgreen
 
   }
 
