@@ -13,9 +13,7 @@ logIn.addEventListener('submit', (e) => {
     getTodos(password);
 
     if (password === 'password'){
-        window.location =`./todos/index.html?password=${password}`;
-});
-'
+        window.location = `./todos/index.html?password=${password}`;
     } else {
         alert('Incorrect Password');
     }

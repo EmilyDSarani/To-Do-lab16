@@ -1,16 +1,14 @@
-import { addTodo, completeTodo, getTodos } from '../universal/local-storage.js';
-import { listcomplete } from './todo-utils.js';
-import { findById } from '../universal/array.js';
+import { addTodo, getTodos } from '../universal/local-storage.js';
 import { render } from './todo-render.js';
 
 
 
 
 const addButton = document.querySelector('#add');
-const addInput = document.querySelector('#item');
 
 
-addButton.addEventListener('click', function () {
+addButton.addEventListener('submit', (e) => {
+    e.preventDefault();
     const newItem = document.getElementById('item').value;
     const items = getTodos();
 

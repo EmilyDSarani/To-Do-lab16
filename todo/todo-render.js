@@ -1,6 +1,3 @@
-import { addTodo, completeTodo, setTodos } from '../universal/local-storage.js';
-import { listcomplete } from './todo-utils.js';
-import { findById } from '../universal/array.js';
 
 export function render(userAdd) {
     const list = document.getElementById('todo');
@@ -20,4 +17,6 @@ export function render(userAdd) {
     list.append(
         item
     );
+
+    
 }
