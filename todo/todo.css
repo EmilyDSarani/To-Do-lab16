@@ -1,5 +1,7 @@
+
 /* Google font */
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@media screen and (min-width:150px) and (max-width:2000px) {
 body {
   background-color: rgba(0,0,0,0.1);
 }
@@ -12,7 +14,7 @@ body {
   margin: 20px auto;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: white;
+  background-color: rgb(254, 255, 204);
   box-shadow: 0px 0px 5px 0px #888;
 }
 
@@ -30,7 +32,7 @@ body {
 /* styling blue horizontal lines */
 #pattern {
   height: 100%;
-  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+  background-image: repeating-linear-gradient(rgb(254, 255, 204) 0px, rgb(254, 255, 204) 24px, teal 25px);
 }
 
 /* styling text content */
@@ -43,4 +45,5 @@ body {
   font-size: 19px;
   letter-spacing: 1px;
   word-spacing: 5px;
+}
 }

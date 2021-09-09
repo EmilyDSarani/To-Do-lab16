@@ -5,17 +5,17 @@ const userOne = {
         {
             id: '',
             todo: '',
-            completed: ''
+            done: ''
         },
         {
             id: '',
             todo: '',
-            completed: ''
+            done: ''
         },
         {
             id: '',
             todo: '',
-            completed: ''
+            done: ''
         },
     ]
 };

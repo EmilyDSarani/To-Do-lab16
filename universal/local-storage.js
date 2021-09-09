@@ -1,3 +1,5 @@
+import { findById } from './array.js';
+
 export const USER = 'USER';
 
 // I'll want to put this function into my olderuser.js so that anything that is put here, it can grab it. 
@@ -35,13 +37,13 @@ export function setTodos(todos) {
 }
 
 // this might...also go into the todo.js because we would want the user to be able to create new
-export function addTodo(message) {
+export function addTodo(describe) {
     const todos = getTodos();
 
     const newTodo = {
         id: Math.ceil(Math.random() * 10000),
-        todo: message,
-        completed: false,
+        todo: describe,
+        done: false,
     };
 
     todos.push(newTodo);
@@ -54,9 +56,9 @@ export function completeTodo(id) {
   
     const todos = getTodos();
 
-    const matchingTodo = todos.find(todo => todo.id === id);
+    const matchingTodo = findById(todo => todo.id === id);
 
-    matchingTodo.completed = true;
+    matchingTodo.done = true;
    
 
     setTodos(todos);
