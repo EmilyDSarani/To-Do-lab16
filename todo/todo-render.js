@@ -2,7 +2,7 @@ import data from '../universal/data.js';
 
 
 export function render(todo) {
-    const list = document.getElementById('todo');
+    
     const item = document.createElement('li');
     const input = document.createElement('input');
   
@@ -12,18 +12,17 @@ export function render(todo) {
     input.setAttribute('value', todo.id);
     
 
-    item.textContent = todo;
+    item.textContent = todo.todo;
 
     item.classList.add('done');
 
     //list.style.textDecoration = 'line-through';
     
-    list.append(
-        item,
+    item.append(
         input
     );
 
-    
+    return item; 
 }
 
 export function listcomplete(item){
