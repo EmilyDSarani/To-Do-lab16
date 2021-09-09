@@ -7,18 +7,21 @@ import { render } from './todo-render.js';
 const addButton = document.querySelector('#add');
 
 
-addButton.addEventListener('submit', (e) => {
+addButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const newItem = document.getElementById('item').value;
-    const items = getTodos();
+    const newItem = document.getElementById('item');
+    
 
-    if (newItem) {
+    if (newItem.value) {
 
-        addTodo(newItem);
+        addTodo(newItem.value);
 
         document.getElementById('item').value = '';
 
+        const items = getTodos();
+        
         for (let item of items){
+            
             render(item);
         }
     } else {

@@ -43,7 +43,7 @@ export function addTodo(describe) {
     const newTodo = {
         id: Math.ceil(Math.random() * 10000),
         todo: describe,
-        done: false,
+        done: true,
     };
 
     todos.push(newTodo);

@@ -46,4 +46,22 @@ body {
   letter-spacing: 1px;
   word-spacing: 5px;
 }
+.add{
+  background-color:rgb(254, 255, 204);
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  top: -52px;
+  right: -360px;
+  font-family: 'Dancing Script', cursive;
+}
+.item{
+  display: flex;
+  position: relative;
+  top: -30px;
+  right: -200px;
+  font-family: 'Dancing Script', cursive;
+  background-color:rgb(254, 255, 204); 
+}
 }
