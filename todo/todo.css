@@ -56,6 +56,9 @@ body {
   right: -360px;
   font-family: 'Dancing Script', cursive;
 }
+.add:hover{
+  background-color:rgba(255,0,0,0.6);
+}
 .item{
   display: flex;
   position: relative;
@@ -63,5 +66,14 @@ body {
   right: -200px;
   font-family: 'Dancing Script', cursive;
   background-color:rgb(254, 255, 204); 
+}
+.logout{
+display: flex;
+position: relative;
+top:605px;
+right: 50px;
+background-color: lightblue;
+border-radius: 40%;
+
 }
 }

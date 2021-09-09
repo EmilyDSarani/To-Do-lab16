@@ -1,27 +1,34 @@
 import data from '../universal/data.js';
 
+
 export function render(todo) {
     const list = document.getElementById('todo');
     const item = document.createElement('li');
-    //const input = document.createElement('check');
-
-    // input.setAttribute('type', 'radio');
-    // input.setAttribute('name', 'addItem');
-    // input.setAttribute('value', userAdd.id);
+    const input = document.createElement('input');
   
+
+    input.setAttribute('type', 'checkbox');
+    input.setAttribute('name', 'todo');
+    input.setAttribute('value', todo.id);
+    
+
     item.textContent = todo;
 
+    item.classList.add('done');
+
+    //list.style.textDecoration = 'line-through';
     
     list.append(
-        item
+        item,
+        input
     );
 
     
 }
 
-export function listcomplete(user){
-    for (let list of data) {
-        const isComplete = user.completed[list.id];
+export function listcomplete(item){
+    for (let todo of data) {
+        const isComplete = item.completed[todo.id];
         if (isComplete){
             return true;
         }

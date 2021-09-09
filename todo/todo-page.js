@@ -1,11 +1,11 @@
-import { addTodo, getTodos } from '../universal/local-storage.js';
+import { addTodo, getTodos, completeTodo } from '../universal/local-storage.js';
 import { render } from './todo-render.js';
 
 
 
 
 const addButton = document.querySelector('#add');
-
+const logOut = document.querySelector('#log-out');
 
 addButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -30,4 +30,8 @@ addButton.addEventListener('click', (e) => {
 });
 
 
+logOut.addEventListener('click', () =>{
+    window.location.href = '../newuser/index.html';
+
+});
 //ask Erich if there is a way to loop the data something similiar to "If there is a user, get todo, else set todo list"
