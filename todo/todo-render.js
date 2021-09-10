@@ -28,4 +28,5 @@ export function render(todo) {
 
 
 // can set this up so checkbox input and text for to is wrapped inside a label, and as long as those two things are in the label, you can click on the text and the checkbox will check. Can use CSS to make text be underline-- but it wont affect the completed data, still need an event listener on the label so that when the label is clicked the function is called that completes the tasks
-//most people are rendering text and button within each li and the button will have a listener that will change it. 
+
+
