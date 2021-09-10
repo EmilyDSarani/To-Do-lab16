@@ -76,4 +76,10 @@ background-color: lightblue;
 border-radius: 40%;
 
 }
+input:checked + li{
+  cursor: pointer;
+  transform: scale(1);
+  text-decoration-line: line-through;
+}
+
 }

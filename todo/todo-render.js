@@ -14,7 +14,7 @@ export function render(todo) {
 
     item.textContent = todo.todo;
 
-    item.classList.add('done');
+    input.classList.add('done');
 
     //list.style.textDecoration = 'line-through';
     

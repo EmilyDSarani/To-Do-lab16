@@ -1,19 +1,20 @@
-import { getUser, getTodos } from '../universal/local-storage.js';
+import { getUser } from '../universal/local-storage.js';
+//import data from '../universal/data.js';
 
-const logIn = document.getElementById('log');
+
 const noAccount = document.getElementById ('no-account');
-const formEl = document.forms.oldform;
-
-logIn.addEventListener('submit', (e) => {
+//const formEl = document.forms.oldform;
+const formEl = document.querySelector('#oldform');
+console.log(noAccount);
+formEl.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(formEl);
     const password = formData.get('password');
+    const user = getUser();
 
-    getUser(password);
-    getTodos(password);
-
-    if (password === 'password'){
-        window.location = `./todos/index.html?password=${password}`;
+    console.log(password);
+    if (password === user.password){
+        window.location = '../todo/index.html';
     } else {
         alert('Incorrect Password');
     }

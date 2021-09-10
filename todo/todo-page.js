@@ -1,5 +1,5 @@
-import { addTodo, getTodos, completeTodo } from '../universal/local-storage.js';
-import { render } from './todo-render.js';
+import { addTodo, getTodos } from '../universal/local-storage.js';
+import { render, listcomplete } from './todo-render.js';
 
 
 const list = document.getElementById('todo');
@@ -28,7 +28,7 @@ addButton.addEventListener('click', (e) => {
         const items = getTodos();
 
         list.textContent = '';
-        
+
         for (let item of items){
             
             const todoItem = render(item);
