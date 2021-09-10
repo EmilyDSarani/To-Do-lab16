@@ -43,14 +43,5 @@ logOut.addEventListener('click', () =>{
     window.location.href = '../olduser/index.html';
 
 });
-//ask Erich if there is a way to loop the data something similiar to "If there is a user, get todo, else set todo list"
 
-// export function listcomplete(item){
-//     for (let todo of data) {
-//         const isComplete = item.completed[todo.id];
-//         if (isComplete){
-//             return true;
-//         }
-//     }
-//     return false;
-// }
+
