@@ -70,16 +70,15 @@ body {
 .logout{
 display: flex;
 position: relative;
-top:605px;
-right: 50px;
+top: -805px;
+right: -1170px;
 background-color: lightblue;
 border-radius: 40%;
 
 }
-input:checked + li{
+.done{
   cursor: pointer;
-  transform: scale(1);
-  text-decoration-line: line-through;
+  text-decoration: line-through;
+ 
 }
-
 }

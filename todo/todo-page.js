@@ -1,9 +1,8 @@
 import { addTodo, getTodos } from '../universal/local-storage.js';
-import { render, listcomplete } from './todo-render.js';
-
+import { render } from './todo-render.js';
 
 const list = document.getElementById('todo');
-
+// const input = document.querySelector('.done');
 const addButton = document.querySelector('#add');
 const logOut = document.querySelector('#log-out');
 
@@ -41,7 +40,17 @@ addButton.addEventListener('click', (e) => {
 
 
 logOut.addEventListener('click', () =>{
-    window.location.href = '../newuser/index.html';
+    window.location.href = '../olduser/index.html';
 
 });
 //ask Erich if there is a way to loop the data something similiar to "If there is a user, get todo, else set todo list"
+
+// export function listcomplete(item){
+//     for (let todo of data) {
+//         const isComplete = item.completed[todo.id];
+//         if (isComplete){
+//             return true;
+//         }
+//     }
+//     return false;
+// }

@@ -1,5 +1,3 @@
-import data from '../universal/data.js';
-
 
 export function render(todo) {
     
@@ -23,15 +21,5 @@ export function render(todo) {
     );
 
     return item; 
-}
-
-export function listcomplete(item){
-    for (let todo of data) {
-        const isComplete = item.completed[todo.id];
-        if (isComplete){
-            return true;
-        }
-    }
-    return false;
 }
 
