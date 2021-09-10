@@ -23,6 +23,6 @@ formEl.addEventListener('submit', (e) => {
 
 
 noAccount.addEventListener('click', () =>{
-    window.location.href = '../newuser/index.html';
+    window.location.href = '../index.html';
 
 });
