@@ -15,11 +15,11 @@ form.addEventListener('submit', (e) => {
 
 
     setUser(user); 
-    window.location.href = '../todo/index.html';
+    window.location.href = './todo/index.html';
 });
 
 //takes the user to a new page if they already have an account
 haveAccount.addEventListener('click', () =>{
-    window.location.href = '../olduser/index.html';
+    window.location.href = './olduser/index.html';
 
 });
