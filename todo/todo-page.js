@@ -43,14 +43,6 @@ logOut.addEventListener('click', () =>{
     window.location.href = '../olduser/index.html';
 
 });
-//ask Erich if there is a way to loop the data something similiar to "If there is a user, get todo, else set todo list"
 
-// export function listcomplete(item){
-//     for (let todo of data) {
-//         const isComplete = item.completed[todo.id];
-//         if (isComplete){
-//             return true;
-//         }
-//     }
-//     return false;
-// }
+//my plan is to bring the lable over and do an eventListener to render the completed items through it...idk if that makes sense, but wanted to make a note. 
+// can set this up so checkbox input and text for to is wrapped inside a label, and as long as those two things are in the label, you can click on the text and the checkbox will check. Can use CSS to make text be underline-- but it wont affect the completed data, still need an event listener on the label so that when the label is clicked the function is called that completes the tasks
